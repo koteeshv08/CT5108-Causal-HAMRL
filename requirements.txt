@@ -1,0 +1,7 @@
+torch
+pysc2
+smac
+tensorboard
+numpy
+matplotlib
+yaml
