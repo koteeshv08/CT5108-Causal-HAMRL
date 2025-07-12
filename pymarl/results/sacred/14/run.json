@@ -1,0 +1,158 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "D:\\RL Thesis\\Sample Test\\pymarl\\src",
+    "dependencies": [
+      "munch==2.5.0",
+      "numpy==1.21.6",
+      "PyYAML==6.0.2",
+      "sacred==0.8.1",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [
+      {
+        "commit": "c971afdceb34635d31b778021b0ef90d7af51e86",
+        "dirty": true,
+        "url": "https://github.com/oxwhirl/pymarl.git"
+      },
+      {
+        "commit": "c971afdceb34635d31b778021b0ef90d7af51e86",
+        "dirty": true,
+        "url": "https://github.com/oxwhirl/pymarl.git"
+      },
+      {
+        "commit": "c971afdceb34635d31b778021b0ef90d7af51e86",
+        "dirty": true,
+        "url": "https://github.com/oxwhirl/pymarl.git"
+      }
+    ],
+    "sources": [
+      [
+        "main.py",
+        "_sources\\main_7b9ed98db5491a0b733921ee287d0885.py"
+      ],
+      [
+        "run.py",
+        "_sources\\run_b0aaad29119fb7a2d25dd2f9c859d27e.py"
+      ],
+      [
+        "utils\\logging.py",
+        "_sources\\logging_3589d7abf2790b486b0bcc00ce0c8ecb.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_socket.py\", line 118, in recv\n    bytes_ = _recv()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_socket.py\", line 97, in _recv\n    return sock.recv(bufsize)\n",
+    "socket.timeout: timed out\n",
+    "\nDuring handling of the above exception, another exception occurred:\n\n",
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 62, in catch_websocket_connection_errors\n    yield\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 179, in _read\n    response_str = self._sock.recv()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_core.py\", line 388, in recv\n    opcode, data = self.recv_data()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_core.py\", line 416, in recv_data\n    opcode, frame = self.recv_data_frame(control_frame)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_core.py\", line 437, in recv_data_frame\n    frame = self.recv_frame()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_core.py\", line 478, in recv_frame\n    return self.frame_buffer.recv_frame()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_abnf.py\", line 363, in recv_frame\n    self.recv_header()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_abnf.py\", line 319, in recv_header\n    header = self.recv_strict(2)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_abnf.py\", line 398, in recv_strict\n    bytes_ = self.recv(min(16384, shortage))\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_core.py\", line 563, in _recv\n    return recv(self.sock, bufsize)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\websocket\\_socket.py\", line 123, in recv\n    raise WebSocketTimeoutException(message)\n",
+    "websocket._exceptions.WebSocketTimeoutException: timed out\n",
+    "\nDuring handling of the above exception, another exception occurred:\n\n",
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 147, in send\n    res = self.send_req(req)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 127, in send_req\n    return self.read()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\stopwatch.py\", line 205, in _stopwatch\n    return func(*args, **kwargs)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 98, in read\n    response = self._read()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 179, in _read\n    response_str = self._sock.recv()\n",
+    "  File \"C:\\Users\\Koteesh\\AppData\\Local\\Programs\\Python\\Python38\\lib\\contextlib.py\", line 131, in __exit__\n    self.gen.throw(type, value, traceback)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 67, in catch_websocket_connection_errors\n    raise ConnectionError(\"Websocket timed out.\")\n",
+    "pysc2.lib.protocol.ConnectionError: Websocket timed out.\n",
+    "\nDuring handling of the above exception, another exception occurred:\n\n",
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\smac\\env\\starcraft2\\starcraft2.py\", line 481, in step\n    self._obs = self._controller.observe()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\remote_controller.py\", line 95, in _valid_status\n    return func(self, *args, **kwargs)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\stopwatch.py\", line 205, in _stopwatch\n    return func(*args, **kwargs)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\remote_controller.py\", line 244, in observe\n    obs = self._client.send(observation=sc_pb.RequestObservation(\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\protocol.py\", line 149, in send\n    raise ConnectionError(\"Error during %s: %s\" % (name, e))\n",
+    "pysc2.lib.protocol.ConnectionError: Error during observation: Websocket timed out.\n",
+    "\nDuring handling of the above exception, another exception occurred:\n\n",
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\sacred\\config\\captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/main.py\", line 35, in my_main\n    run(_run, config, _log)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\pymarl\\src\\run.py\", line 48, in run\n    run_sequential(args=args, logger=logger)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\pymarl\\src\\run.py\", line 166, in run_sequential\n    episode_batch = runner.run(test_mode=False)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\pymarl\\src\\runners\\episode_runner.py\", line 75, in run\n    reward, terminated, env_info = self.env.step(actions[0])\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\smac\\env\\starcraft2\\starcraft2.py\", line 483, in step\n    self.full_restart()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\smac\\env\\starcraft2\\starcraft2.py\", line 449, in full_restart\n    self._launch()\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\smac\\env\\starcraft2\\starcraft2.py\", line 323, in _launch\n    self._sc2_proc = self._run_config.start(\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\run_configs\\platforms.py\", line 83, in start\n    return sc_process.StarcraftProcess(\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\sc_process.py\", line 137, in __init__\n    self._controller = remote_controller.RemoteController(\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\remote_controller.py\", line 142, in __init__\n    sock = self._connect(host, port, proc, timeout_seconds)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\stopwatch.py\", line 205, in _stopwatch\n    return func(*args, **kwargs)\n",
+    "  File \"D:\\RL Thesis\\Sample Test\\smac\\pymarl_env\\lib\\site-packages\\pysc2\\lib\\remote_controller.py\", line 176, in _connect\n    raise ConnectError(\"Failed to connect to the SC2 websocket. Is it up?\")\n",
+    "pysc2.lib.remote_controller.ConnectError: Failed to connect to the SC2 websocket. Is it up?\n"
+  ],
+  "heartbeat": "2025-07-03T11:08:03.333129",
+  "host": {
+    "ENV": {},
+    "cpu": "Unknown",
+    "gpus": {
+      "driver_version": "561.19",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "persistence_mode": false,
+          "total_memory": 4096
+        }
+      ]
+    },
+    "hostname": "Koteesh-HP-Victus",
+    "os": [
+      "Windows",
+      "Windows-10-10.0.26100-SP0"
+    ],
+    "python_version": "3.8.10"
+  },
+  "meta": {
+    "command": "my_main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.map_name=3m",
+        "t_max=5000000"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2025-07-02T12:54:46.287390",
+  "status": "FAILED",
+  "stop_time": "2025-07-03T11:08:03.390457"
+}
